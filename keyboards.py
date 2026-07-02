@@ -5,7 +5,7 @@ from config.settings import CHANNEL_URL, PLAN_NAMES, PERIODS, PRICES, PLAN_EMOJI
 
 def main_keyboard():
     kb = InlineKeyboardBuilder()
-    kb.button(text="🛡️ Mini App", web_app=WebAppInfo(url="https://smel.vercel.app/"))
+    kb.button(text="🛡️ Mini App", web_app=WebAppInfo(url="https://smel-three.vercel.app/"))
     kb.button(text="Подключить VPN", callback_data="connect_vpn", icon_custom_emoji_id="5323761960829862762")
     kb.button(text="Оплатить подписку", callback_data="pay", icon_custom_emoji_id="5445350406215465190")
     kb.button(text="Пригласить друга", callback_data="invite", icon_custom_emoji_id="5260450573768990626", style="primary")
